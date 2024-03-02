@@ -74,11 +74,11 @@ export default {
           icon: 'icon-yejianmoshi',
           KEY: 'dark'
         },
-        {
-          name: '阅读模式',
-          icon: 'icon-yuedu',
-          KEY: 'read'
-        }
+        // {
+        //   name: '阅读模式',
+        //   icon: 'icon-yuedu',
+        //   KEY: 'read'
+        // }
       ],
       _scrollTimer: null,
       _textareaEl: null,

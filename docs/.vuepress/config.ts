@@ -23,7 +23,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     "/": {
       lang: "zh-CN",
       title: "Alexi's blog",
-      description: "前端技术博客。包括大前端、服务端、通用技术",
+      description: "前端技术博客。包括前端、技术",
     },
   },
   patterns: ["**/*.vue", "*.md", "**/!(_)*/!(README).md"],
@@ -35,7 +35,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: "首页", link: "/" },
       // { text: "知识体系", link: "/knowledge/" },
       {
-        text: "大前端",
+        text: "前端",
         link: "/fe/", //目录页链接，此处link是 vdoing 主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           {
@@ -57,11 +57,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: "专业领域",
             link: "/fe/specialties/",
-          },
-          {
-            text: "业务场景",
-            link: "/fe/business/",
-          },
+          }
         ],
       },
       {
@@ -95,53 +91,30 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: "Linux",
             link: "/linux/",
-          },
-          // {
-          //   text: "AIGC",
-          //   link: "/aigc/",
-          // },
-          // {
-          //   text: "其他领域",
-          //   items: [
-          //     {
-          //       text: "客户端",
-          //       link: "/app/",
-          //     },
-          //     {
-          //       text: "服务端",
-          //       link: "/server/",
-          //     },
-          //     {
-          //       text: "产品设计",
-          //       link: "/design/",
-          //     },
-          //   ],
-          // },
+          }
         ],
       },
-      { text: "软素质", link: "/soft-quality/" },
       {
-        text: "生活 & More",
+        text: "More",
         link: "/life/",
         items: [
-          { text: "面试经验", link: "/interviews/" },
-          { text: "人生总结", link: "/life-summary/" },
-          // { text: "个人简历", link: "/resume/" },
-          // {
-          //   text: "想法记录",
-          //   link: "/pages/ideas/",
-          // },
+          {
+            text: "面试相关",
+            link: "/interviews/",
+          },
           {
             text: "实用技巧",
             link: "/practical-tips/",
           },
           {
-            text: "读书观影",
-            link: "/readbook-watchmovies/",
-          },
-          {
-            text: "友情链接",
-            link: "/friends/",
+            text: "闲言碎语",
+            items: [
+              {
+                text: "读书观影",
+                link: "/readbook-watchmovies/",
+              },
+              { text: "人生总结", link: "/life-summary/" },
+            ],
           },
           {
             text: "收藏夹",
@@ -157,11 +130,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               },
             ],
           },
+          {
+            text: "关于",
+            items: [
+              {
+                text: "我",
+                link: "/about/"
+              },
+              {
+                text: "友情链接",
+                link: "/friends/",
+              },
+            ],
+          },
         ],
-      },
-      {
-        text: "关于",
-        link: "/about/",
       },
       {
         text: "索引",
@@ -209,7 +191,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       // 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
       // 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    bodyBgImgOpacity: 0.7, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0.1~1.0, 默认0.5
     bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // bodyBgPreviewImg: '/img/bg-small.jpeg',
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
