@@ -161,13 +161,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // repo: "yoloalexi/blog", // 导航栏右侧生成Github链接
     search: true,
     searchMaxSuggestions: 10, // 搜索结果显示最大数
-    algolia: {
-      // apiKey: "Way3m6Dx4pgw1dIgYAn8iZee",
-      apiKey: "9697875d39432384a444b570563811be",
-      indexName: "alexi",
-      appId: "0QTGLFRP72",
-      // appId: "Mw22fRcVDWn55nxxeIs3cOKo-gzGzoHsz",
-    },
 
     lastUpdated: "上次更新", // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹
@@ -187,7 +180,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     bodyBgImg: [
-      "/img/bj.jpeg",
+      "/img/bj.png",
       // 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
       // 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
@@ -223,7 +216,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: "/img/avatar.jpeg",
+      avatar: "/img/avatar.png",
       name: "Alexi / yoloalexi",
       slogan: "To be best",
     },
@@ -345,6 +338,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 'fulltext-search',
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
+    [
+      "thirdparty-search",
+      {
+        thirdparty: [
+          {
+            title: "通过百度搜索本站的",
+            frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
+          },
+        ],
+      },
+    ],
     // [
     //   'thirdparty-search',
     //   {
