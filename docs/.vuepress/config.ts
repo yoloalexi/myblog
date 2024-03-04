@@ -96,7 +96,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: "More",
-        link: "/life/",
+        link: "/interviews/",
         items: [
           {
             text: "面试相关",
@@ -149,9 +149,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: "索引",
         link: "/archives/",
         items: [
+          { text: "归档", link: "/archives/" },
           { text: "分类", link: "/categories/" },
           { text: "标签", link: "/tags/" },
-          { text: "归档", link: "/archives/" },
         ],
       },
     ],
